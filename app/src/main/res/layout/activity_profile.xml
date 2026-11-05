@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_gray">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/app_black"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="←"
+            android:textColor="@color/knight_yellow"
+            android:textSize="32sp"
+            android:contentDescription="Back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/app_white"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="⚙"
+            android:textSize="29sp"
+            android:textColor="@color/app_white"
+            android:contentDescription="Settings"/>
+
+    </LinearLayout>
+
+    <!-- Profile Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <!-- Profile Picture -->
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_profile_circle"
+                android:gravity="center"
+                android:text="👤"
+                android:textSize="55sp"
+                android:contentDescription="Profile picture"/>
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="John Pork"
+                android:textColor="@color/app_dark_text"
+                android:textSize="23sp"
+                android:textStyle="bold"/>
+
+            <!-- Verification -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="UCF Verified ✔"
+                android:textColor="@color/app_dark_text"
+                android:textSize="16sp"/>
+
+            <!-- Personal Information Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_event_card"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Major: Computer Science"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Year: Junior"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Interests:"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Gaming, Coding, Movies"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Social Style:"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Quiet, Chill"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Hosted: 2 Events"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <!-- Edit Profile Button -->
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_search_button"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:textColor="@color/app_dark_text"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Reusable Bottom Navigation -->
+    <include layout="@layout/layout_bottom_navigation" />
+
+
+</LinearLayout>

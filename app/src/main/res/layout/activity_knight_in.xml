@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_gray">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_black"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="←"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/knight_yellow"
+            android:contentDescription="Back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Knight-In"
+            android:textColor="@color/app_white"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Search Field -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_white"
+                android:hint="⌕  Search Course..."
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp"
+                android:inputType="text"/>
+
+            <!-- Filter Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_filter"
+                    android:gravity="center"
+                    android:text="Course  ▼"
+                    android:textColor="@color/app_white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter"
+                    android:gravity="center"
+                    android:text="Time  ▼"
+                    android:textColor="@color/app_white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Filter Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_filter"
+                    android:gravity="center"
+                    android:text="Location  ▼"
+                    android:textColor="@color/app_white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter"
+                    android:gravity="center"
+                    android:text="Date  ▼"
+                    android:textColor="@color/app_white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Filter Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_filter"
+                    android:gravity="center"
+                    android:text="Study Vibe  ▼"
+                    android:textColor="@color/app_white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter"
+                    android:gravity="center"
+                    android:text="Size  ▼"
+                    android:textColor="@color/app_white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Search Button -->
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_search_button"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/app_dark_text"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <!-- Available Sessions -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="14dp"
+                android:text="Available Study Sessions"
+                android:textColor="@color/app_white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Study Session Card 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_event_card"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CAP 4463 - Exam 2 Review"
+                        android:textColor="@color/app_dark_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/ic_nav_saved"
+                        android:tint="#777777"
+                        android:contentDescription="Save study session" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Prof. Ahmed"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="👥 4/6    📚 Discussion"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="📍 Library  •  6:00 PM"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <!-- Study Session Card 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_event_card"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MAC 2312 - HW Session"
+                        android:textColor="@color/app_dark_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/ic_nav_saved"
+                        android:tint="#777777"
+                        android:contentDescription="Save study session" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="👥 3/5    📚 Collaborative"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="📍 Student Union  •  4:30 PM"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Reusable Bottom Navigation -->
+    <include layout="@layout/layout_bottom_navigation" />
+
+
+</LinearLayout>

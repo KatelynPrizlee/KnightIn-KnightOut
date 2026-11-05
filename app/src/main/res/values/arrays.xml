@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vibe_options">
+        <item>Study/Social Vibe</item>
+        <item>Focused</item>
+        <item>Collaborative</item>
+        <item>Discussion</item>
+        <item>Casual</item>
+        <item>Chill</item>
+        <item>Social</item>
+    </string-array>
+</resources>

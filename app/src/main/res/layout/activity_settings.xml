@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_gray">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/app_black"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="←"
+            android:textColor="@color/knight_yellow"
+            android:textSize="32sp"
+            android:contentDescription="Back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@color/app_white"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <!-- Scrollable Settings Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Privacy Settings -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Settings"
+                android:textColor="@color/app_dark_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_event_card"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="14dp"
+                android:text="Manage Privacy Preferences  ›"
+                android:textColor="@color/app_dark_text"
+                android:textSize="16sp"/>
+
+            <!-- Notifications -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="8dp"
+                android:text="Notifications"
+                android:textColor="@color/app_dark_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_event_card"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/checkAllAlerts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Alerts"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/app_black"/>
+
+                <CheckBox
+                    android:id="@+id/checkEventReminders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Reminders"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/app_black"/>
+
+                <CheckBox
+                    android:id="@+id/checkEventUpdates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Updates"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/app_black"/>
+
+                <CheckBox
+                    android:id="@+id/checkFollowingActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Following Activity"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/app_black"/>
+
+                <CheckBox
+                    android:id="@+id/checkRecommendations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommendations"
+                    android:textColor="@color/app_dark_text"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/app_black"/>
+
+            </LinearLayout>
+
+            <!-- Blocked Users -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="8dp"
+                android:text="Blocked Users"
+                android:textColor="@color/app_dark_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_event_card"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="14dp"
+                android:text="View Blocked Users  ›"
+                android:textColor="@color/app_dark_text"
+                android:textSize="16sp"/>
+
+            <!-- Report User -->
+            <Button
+                android:id="@+id/buttonReportUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="@color/app_muted"
+                android:text="Report User"
+                android:textColor="@color/app_dark_text"
+                android:textSize="16sp"
+                android:textAllCaps="false"/>
+
+            <!-- Delete Account -->
+            <Button
+                android:id="@+id/buttonDeleteAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#B3261E"
+                android:text="Delete Account"
+                android:textColor="@color/app_white"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+
+            <!-- Save Changes -->
+            <Button
+                android:id="@+id/buttonSaveChanges"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/knight_yellow"
+                android:text="Save Changes"
+                android:textColor="@color/app_dark_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Reusable Bottom Navigation -->
+    <include layout="@layout/layout_bottom_navigation" />
+
+</LinearLayout>
