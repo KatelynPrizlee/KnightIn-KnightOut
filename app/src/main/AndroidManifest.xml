@@ -23,6 +23,22 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.FollowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SavedEventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">

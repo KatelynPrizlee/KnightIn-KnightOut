@@ -16,8 +16,11 @@
         android:paddingHorizontal="16dp">
 
         <TextView
+            android:id="@+id/btnBack"
             android:layout_width="48dp"
             android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center_vertical"
             android:text="←"
             android:textColor="@color/knight_yellow"

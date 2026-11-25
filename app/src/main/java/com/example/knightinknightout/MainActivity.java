@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.knightinknightout.activities.LoginActivity;
 import com.example.knightinknightout.repositories.UserRepository;
+import com.example.knightinknightout.utils.BottomNavHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        BottomNavHelper.setup(this, R.id.navHome);
     }
 
     @Override
