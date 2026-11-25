@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray"
+    android:orientation="vertical">
+
+    <!-- App Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_black"
+        android:gravity="center"
+        android:text="Knight-In   ⟷   Knight-Out"
+        android:textColor="@color/app_white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="Create Account"
+                android:textColor="@color/app_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints="givenName"
+                android:background="@drawable/bg_input"
+                android:hint="First name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:autofillHints="familyName"
+                android:background="@drawable/bg_input"
+                android:hint="Last name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:autofillHints="username"
+                android:background="@drawable/bg_input"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/bg_input"
+                android:hint="Email address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:autofillHints="newPassword"
+                android:background="@drawable/bg_input"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:autofillHints="newPassword"
+                android:background="@drawable/bg_input"
+                android:hint="Confirm password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/app_dark_text"
+                android:textColorHint="#666666"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="22dp"
+                android:backgroundTint="@color/knight_yellow"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/app_dark_text"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:indeterminateTint="@color/knight_yellow"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingVertical="6dp"
+                android:text="Already have an account? Sign In"
+                android:textColor="@color/knight_yellow"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
